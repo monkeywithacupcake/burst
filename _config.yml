@@ -1,0 +1,30 @@
+# File: _config.yml
+# -----------------------------------------------------------------------------
+# Site settings
+# -----------------------------------------------------------------------------
+name: 
+email: 
+logo:
+description: > # this means to ignore newlines until "nextthing:"
+  I like birbs.
+footer_text: >
+  Fish are friends.
+url: # the base hostname & protocol for your site
+baseurl:  # the subpath of your site, e.g. /blog/
+last_updated: # leave blank if you don't want to display last updated
+github:
+  repository_url:
+  user_url:
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "default"
+
+webrick:
+  headers:
+    My-Header: My-Value
+    My-Other-Header: My-Other-Value
