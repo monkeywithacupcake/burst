@@ -24,7 +24,16 @@ defaults:
     values:
       layout: "default"
 
-webrick:
-  headers:
-    My-Header: My-Value
-    My-Other-Header: My-Other-Value
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
+collections:
+  micro:
+    defaults:
+      layout: post
+      inline: true
+    output: true
+    permalink: /micro/:path/
+micro_limit: 50
+
+
