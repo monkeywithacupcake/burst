@@ -31,3 +31,8 @@
     margin-top: 50px;
     padding-top: 20px;
 }
+.micro tr:nth-child(even)
+{ 
+    color: #48185e
+}
+
