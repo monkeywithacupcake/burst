@@ -1,11 +1,8 @@
 # burst
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+Burst is a microblog first jekyll theme. Ideal for people who want to fire off quick posts that will not require much thought about formatting, tags, date, etc. 
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
-
+All micro posts will be in the `_micro` folder. 
 
 ## Installation
 
@@ -28,6 +25,21 @@ And then execute:
 Or install it yourself as:
 
     $ gem install burst
+
+If you really are committed to microblogging, wanting to fire off whatever thought without typing any yaml at all in your posts placed in the _micro folder, add this precommit hook
+
+By "add this precommit hook", I mean add a file called `pre-commit` in the project subfolder `.git/hooks` You may have to make it executable with `hmod ug+x .git/hooks/*`
+
+```
+#!/bin/sh
+# Contents of .git/hooks/pre-commit
+
+git diff --cached --name-status | grep "_micro" | while read a b; do
+  echo "---\ndate: $(date -u "+%Y-%m-%d %T %Z")\n---\n$(cat $b)" > tmp
+  mv tmp $b
+  git add $b
+done
+```
 
 ## Usage
 
