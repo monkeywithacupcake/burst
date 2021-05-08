@@ -6,6 +6,8 @@ All micro posts will be in the `_micro` folder.
 
 ## Installation
 
+** DOES NOT WORK YET**
+**IGNORE - you can clone this repo and work from there, though**
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
@@ -26,9 +28,9 @@ Or install it yourself as:
 
     $ gem install burst
 
-If you really are committed to microblogging, wanting to fire off whatever thought without typing any yaml at all in your posts placed in the _micro folder, add this precommit hook
+**IGNORE end of ignore**
 
-By "add this precommit hook", I mean add a file called `pre-commit` in the project subfolder `.git/hooks` You may have to make it executable with `hmod ug+x .git/hooks/*`
+If you really are committed to microblogging, wanting to fire off whatever thought without typing any yaml at all in your posts placed in the _micro folder, add this precommit hook that will add yaml to the top of all of the files that you newly commit to the _micro directory. The date in this file does not matter for your purposes because it is the file name that is used for sort order. So, continue to name posts like you are familiar with with jekyll yyyymmdd-something.md.
 
 ```
 #!/bin/sh
@@ -40,6 +42,9 @@ git diff --cached --name-status | grep "_micro" | while read a b; do
   git add $b
 done
 ```
+
+By "add this precommit hook", I mean add a file called `pre-commit` in the project subfolder `.git/hooks` You may have to make it executable with `chmod ug+x .git/hooks/*`
+
 
 ## Usage
 
