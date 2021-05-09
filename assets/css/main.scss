@@ -1,0 +1,22 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Dimensions
+$max-content-width: {{site.max_width}};
+$nav-height: 56px;
+$space-1: .5rem !default;
+$space-4: .4rem ;
+$line-height: 1.5 !default;
+
+@import
+  "variables",
+  "themes",
+  "layout",
+  "base",
+  "distill"
+;
+
+
+
