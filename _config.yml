@@ -11,6 +11,7 @@ footer_text: >
   Fish are friends.
 url: # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
+max_width: 800px
 last_updated: # leave blank if you don't want to display last updated
 github:
   repository_url:
@@ -23,6 +24,8 @@ defaults:
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "default"
+# Includes
+include: ['_pages']
 
 # -----------------------------------------------------------------------------
 # Collections

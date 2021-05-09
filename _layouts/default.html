@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en-US' }}"></html>
 <html>
 
   {% include head.html %}
@@ -12,12 +11,11 @@
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
-        {% include micro.html %}
       </div>
     </div>
 
     {% include footer.html %}
-
+    {% include scripts/bootstrap.html %} 
 
   </body>
 
