@@ -84,7 +84,7 @@ a, table.table a {
 
 .navbar {
   box-shadow: none;
-  border-bottom: 1px solid  --global-theme-color;
+  border-bottom: 1px solid $grey-color-light;
   background-color: var(--global-bg-color);
   opacity: 0.95;
 }
@@ -219,7 +219,7 @@ footer.fixed-bottom {
 }
 
 footer.sticky-bottom {
-  border-top: 1px solid  --global-distill-app-color;
+  border-top: 1px solid $grey-color-light;
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 0.9rem;
@@ -229,7 +229,7 @@ footer.sticky-bottom {
 // Blog
 
 .header-bar {
-  border-bottom: 1px solid --global-theme-color;
+  border-bottom: 1px solid $grey-color-light;
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 5rem;
@@ -244,7 +244,7 @@ footer.sticky-bottom {
   margin-bottom: 40px;
   padding: 0;
   li {
-    border-bottom: 1px solid  --global-theme-color;
+    border-bottom: 1px solid $grey-color-light;
     list-style: none;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -268,11 +268,11 @@ footer.sticky-bottom {
     .page-link {
       color: var(--global-text-color);
       &:hover {
-        color: --global-hover-color;
+        color: $black-color;
       }
     }
     &.active .page-link {
-      color: --global-bg-color;
+      color: $white-color;
       background-color: var(--global-theme-color);
       &:hover {
         background-color: var(--global-theme-color);
@@ -333,14 +333,14 @@ footer.sticky-bottom {
         width: 100%;
       }
       .card-title {
-        color: --global-text-color;
+        color: $black-color;
       }
     }
   }
 
   h2.category {
-    color:--global-theme-color;
-    border-bottom: 1px solid --global-theme-color;
+    color: $grey-color-light;
+    border-bottom: 1px solid $grey-color-light;
     padding-top: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -367,8 +367,8 @@ footer.sticky-bottom {
     }
   }
   h2.year {
-    color: --global-text-color-light;
-    border-top: 1px solid --global-text-color-light;
+    color: $grey-color-light;
+    border-top: 1px solid $grey-color-light;
     padding-top: 1rem;
     margin-top: 2rem;
     margin-bottom: -2rem;
@@ -502,67 +502,4 @@ html.transition *:before,
 html.transition *:after {
   transition: all 750ms !important;
   transition-delay: 0 !important;
-}
-
-.project {
-
-  .thumbnail {
-      object-fit: contain;
-      overflow: hidden;
-      height: 200px;
-      width: 100%;
-
-      img {
-          height: auto;
-          position: relative;
-              left: 0%;
-              top: 0%;
-          width: 200px;
-      }
-  }
-}
-.gtod {
-  padding: 20px 5px;
-}
-.gtod-date
-{
-  text-align:center;
-  vertical-align:middle;
-  font-weight: bold;
-  font-size: 2em;
-}
-.gtod-tags
-{
-  padding-top: 5px;
-  color:  --global-theme-color;
-}
-
-.news {
-  border-top: 1px solid $grey-color-light;
-  margin-top: 30px;
-  padding-top: 20px;
-
-  h2 {
-      font-weight: bold;
-      margin-top: 0;
-      margin-bottom: 10px;
-  }
-  table {
-      border-collapse: collapse;
-      width: 100%;
-
-      .date { width: 19%; }
-      .announcement { width: 81%; }
-
-      tr { text-align: left; }
-      td {
-          padding: 6px 0;
-          vertical-align: top;
-          border: none;
-      }
-  }
-}
-.micro tr:nth-child(even)
-{ 
-  color: --global-theme-color;
 }

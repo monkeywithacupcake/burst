@@ -3,7 +3,7 @@
  ******************************************************************************/
 
 d-byline {
-  border-top-color: --global-text-color-light !important;
+  border-top-color: $grey-color-light !important;
 }
 
 d-byline h3 {
@@ -23,7 +23,7 @@ d-article {
     color: var(--global-text-color) !important;
   }
   a, h1, h2, hr {
-    border-bottom-color: --global-text-color-light !important;
+    border-bottom-color: $grey-color-light !important;
   }
   a:hover {
     border-bottom-color: var(--global-hover-color) !important;
@@ -31,7 +31,7 @@ d-article {
 }
 
 d-appendix {
-  border-top-color: --global-text-color-light !important;
+  border-top-color: $grey-color-light !important;
   color: var(--global-distill-app-color) !important;
   h3, li, span {
     color: var(--global-distill-app-color) !important;

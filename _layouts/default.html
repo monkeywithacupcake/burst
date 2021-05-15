@@ -3,20 +3,27 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+
+    <!-- Header -->
 
     {% include header.html %}
 
+    <!-- Content -->
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <div class="container mt-5">
+      {{ content }}
     </div>
 
+    <!-- Footer -->
+
     {% include footer.html %}
-    {% include scripts/bootstrap.html %} 
 
   </body>
+    {% include scripts/bootstrap.html %} 
+    {% include scripts/mansory.html %} 
+    {% include scripts/misc.html %} 
+
+ 
 
 </html>
